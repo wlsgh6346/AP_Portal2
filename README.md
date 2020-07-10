@@ -7,4 +7,4 @@ AP_Portal 2.0 웹 페이지 제작
 
 ## 추가해야 될 것
 - prototype-draft.html --- 임시 보관함
-테스트
+- 그다음 추ㅏㄱ해야 할 것
