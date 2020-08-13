@@ -1,0 +1,73 @@
+.side-nav-air .side-nav-air-link {
+    color: #8391a2;
+    display: block;
+    padding: 10px 30px;
+    font-size: .9375rem;
+    position: relative;
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.side-nav-air .side-nav-air-link:active,
+.side-nav-air .side-nav-air-link:focus,
+.side-nav-air .side-nav-air-link:hover {
+    color: #bccee4;
+    text-decoration: none
+}
+
+.side-nav-air .side-nav-air-link span {
+    vertical-align: middle
+}
+
+.side-nav-air .side-nav-air-link i {
+    display: inline-block;
+    line-height: 1.0625rem;
+    margin: 0 10px 0 0;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    width: 20px
+}
+
+.side-nav-air .menu-arrow {
+    -webkit-transition: -webkit-transform .15s;
+    transition: -webkit-transform .15s;
+    transition: transform .15s;
+    transition: transform .15s, -webkit-transform .15s;
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+    font-family: 'Material Design Icons';
+    text-rendering: auto;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.side-nav-air .menu-arrow:before {
+    content: "\F142"
+}
+
+.side-nav-air .badge {
+    margin-top: 3px
+}
+
+.side-nav-air .side-nav-air-item.mm-active>a .menu-arrow {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.side-nav-air .side-nav-air-title {
+    padding: 12px 30px;
+    letter-spacing: .05em;
+    pointer-events: none;
+    cursor: default;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    color: #8391a2;
+    font-weight: 700
+}
+
+.side-nav-air .mm-active>a {
+    color: #fff !important
+}
