@@ -1,7 +1,8 @@
 # Group Portal
 기존 외주 프로젝트 AP Portal 종류 후, 회사 내부에서 관리하는 "프로젝트명 미정" 프로젝트 (AP Portal 2.0? Group Ware? Group Portal?)
 
-AP_Portal 2.0 웹 페이지 제작
+# AP_Portal 2.0 웹 페이지 제작
+
      ● AP_Portal Board
           - prototype-borad-write.html  --- 게시판 글쓰기
           - prototype-board-read.html   --- 게시판 읽기
