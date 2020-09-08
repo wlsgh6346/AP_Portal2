@@ -57,42 +57,22 @@
                         </a>
                     </li>
                     <li class="side-nav-item">
-                        <a href="javascript: void(0);" class="side-nav-link">
+                        <a href="crew-portal-calendar.html" class="side-nav-link">
                             <i class="uil-calendar-alt"></i>
-                            <span> Management </span>
-                            <span class="menu-arrow"></span>
+                            <span> Calendar </span>
                         </a>
-                        <ul class="side-nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="crew-portal-calendar.html">Calendar</a>
-                            </li>
-                            <li>
-                                <a href="crew-portal-schedule.html">Schedule</a>
-                            </li>
-                            <li>
-                                <a href="crew-portal-flightlog.html">New Flight Log</a>
-                            </li>
-                          
-                        </ul>
                     </li>
                     <li class="side-nav-item">
-                        <a href="javascript: void(0);" class="side-nav-link">
-                            <i class=" uil-css"></i>
+                        <a href="crew-portal-recency.html" class="side-nav-link">
+                            <i class="mdi mdi-clock-check-outline"></i>
                             <span> Recency </span>
-                            <span class="menu-arrow"></span>
                         </a>
-                        <ul class="side-nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="apps-ecommerce-products.html">Flight Log</a>
-                            </li>
-                            <li>
-                                <a href="apps-ecommerce-products-details.html">Expiry</a>
-                            </li>
-                            <li>
-                                <a href="apps-ecommerce-orders.html">YP File</a>
-                            </li>
-                            
-                        </ul>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="crew-portal-admin.html" class="side-nav-link">
+                            <i class="mdi mdi-account-cog"></i>
+                            <span> Admin </span>
+                        </a>
                     </li>
                 </ul>
                 <!-- End Sidebar -->
@@ -415,40 +395,30 @@
 
                 <!-- Start Content-->
                 <div class="container-fluid">
+
                     <!-- start page title -->
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-10 mb-4">
-                            <div class="page-title-box">
-                                <div class="row page-title-right ml-4 mt-1 mb-1">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">AP Portal 2.0</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Crew Portal</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Calendar</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Schedule</a></li>
-                                        <li class="breadcrumb-item active">New Flight Log</li>
-                                    </ol>
-                                </div>
-                                <a href="crew-portal-schedule.html" class="page-title mt-1 mb-1 font-20">
+                        <div class="col-12 mt-2">
+                                <a href="crew-portal-calendar.html" class="page-title font-20 text-dark">
                                     <span>
-                                        <strong><&nbsp;&nbsp; Back</strong>
+                                        <strong><&nbsp;&nbsp;Back</strong>
                                     </span>
                                 </a>
-                                <h1 class="text-center">New Flight Log</h1>
-                            </div>
                         </div>
+                        <h1 class="text-dark mt-3 ml-3 mb-2">
+                            Flight Log</h1>
+                        </h1>
                     </div>
                     <!-- end page title -->
+
                     <!-- start page content -->
-                    <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-10">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
                             <form class="needs-validation" method="POST" id="flight-log" name="flight-log" novalidate>
                                 <div class="card">
                                     <div class="card-body mr-2 ml-3">
-                                        
                                         <!-- start first row-->
-                                        <div class="row mt-4">
+                                        <div class="row mt-2">
                                             <div class="col-md-4">
                                                 <div class="row mb-3">
                                                     <label for="DATE" class="col-form-label w-25 font-16">Date</label>
@@ -459,7 +429,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group row mb-3">
-                                                    <label for="A/C TYPE" class="col-form-label font-16">A/C TYPE</label>
+                                                    <label for="A/C TYPE" class="col-form-label w-25 font-16">A/C TYPE</label>
                                                     <div class="col-7">
                                                         <input type="text" class="form-control" placeholder='e.g "B787"' id="form_actype" required>
                                                     </div>
@@ -498,7 +468,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group row mb-3">
-                                                    <label for="REG NO" class="col-form-label font-16 mr-2">REG NO</label>
+                                                    <label for="REG NO" class="col-form-label w-25 font-16">REG NO</label>
                                                     <div class="col-7">
                                                         <input type="text" class="form-control" placeholder='e.g "HL8387"' id="form_regno" required>
                                                     </div>
@@ -527,7 +497,7 @@
 
                                         <!-- start crew information -->
                                         <div class="row mt-4">
-                                            <div class="col-xl-8">
+                                            <div class="col-xl-10">
                                                 <div class="row mb-2">
                                                     <div class="col-12 p-0">
                                                         <h5 class="mb-2 text-dark font-24">
@@ -536,7 +506,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="table-responsive text-center">
-                                                    <table class="table table-centered mb-0">
+                                                    <table class="table table-bordered table-centered mb-0">
+                                                        <colgroup>
+                                                            <col width="5%" />
+                                                            <col width="20%" />
+                                                            <col width="75%" />
+                                                        </colgroup>
                                                         <thead class="thead-light">
                                                             <tr>
                                                                 <th>NO</th>
@@ -550,39 +525,49 @@
                                                                 <td>
                                                                     홍길동_1234567
                                                                 </td>
-                                                                <td>
+                                                                <td class="pb-0">
                                                                     <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_first_1" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="1234567-first-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="2">2: 1 Set Crew</option>
+                                                                                    <option value="3">3: 3 Pilot</option>
+                                                                                    <option value="4">4: 2 Set Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_second_1" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="1234567-second-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="C">C: Captain</option>
+                                                                                    <option value="I">I: Instructor</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="T">T: Instructor (Local Flight)</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="D">D: Student (Local Flight)</option>
+                                                                                    <option value="F">F: First Officer</option>
+                                                                                    <option value="U">U: Upgrade First Officer</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="1234567-third-duty" required>
+                                                                                    <option value="" selected>선택</option>
+                                                                                    <option value="1">1: PIC or Pairing crew with PIC</option>
+                                                                                    <option value="2">2: Non-PIC or Pairing Crew with Non-PIC</option>
+                                                                                    <option value="3">3: Captain (Assigned only for Right), F/O (Qualified for Left)</option>
+                                                                                    <option value="R">R: Route Training (OE)</option>
+                                                                                    <option value="O">O: Observer</option>
+                                                                                    <option value="S">S: Safety Crew</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="K">K: Check Airman as MOLIT</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="X">X: Extra (Dead head) Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -591,40 +576,52 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>2</td>
-                                                                <td>홍길동_5462622</td>
                                                                 <td>
+                                                                    홍길동_2222222
+                                                                </td>
+                                                                <td class="pb-0">
                                                                     <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_first_2" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="2222222-first-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="2">2: 1 Set Crew</option>
+                                                                                    <option value="3">3: 3 Pilot</option>
+                                                                                    <option value="4">4: 2 Set Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_second_2" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="2222222-second-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="C">C: Captain</option>
+                                                                                    <option value="I">I: Instructor</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="T">T: Instructor (Local Flight)</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="D">D: Student (Local Flight)</option>
+                                                                                    <option value="F">F: First Officer</option>
+                                                                                    <option value="U">U: Upgrade First Officer</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="2222222-third-duty" required>
+                                                                                    <option value="" selected>선택</option>
+                                                                                    <option value="1">1: PIC or Pairing crew with PIC</option>
+                                                                                    <option value="2">2: Non-PIC or Pairing Crew with Non-PIC</option>
+                                                                                    <option value="3">3: Captain (Assigned only for Right), F/O (Qualified for Left)</option>
+                                                                                    <option value="R">R: Route Training (OE)</option>
+                                                                                    <option value="O">O: Observer</option>
+                                                                                    <option value="S">S: Safety Crew</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="K">K: Check Airman as MOLIT</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="X">X: Extra (Dead head) Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -633,40 +630,52 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>3</td>
-                                                                <td>홍길동_4123447</td>
                                                                 <td>
+                                                                    홍길동_3333333
+                                                                </td>
+                                                                <td class="pb-0">
                                                                     <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_first_3" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="3333333-first-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="2">2: 1 Set Crew</option>
+                                                                                    <option value="3">3: 3 Pilot</option>
+                                                                                    <option value="4">4: 2 Set Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_second_3" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="3333333-second-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="C">C: Captain</option>
+                                                                                    <option value="I">I: Instructor</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="T">T: Instructor (Local Flight)</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="D">D: Student (Local Flight)</option>
+                                                                                    <option value="F">F: First Officer</option>
+                                                                                    <option value="U">U: Upgrade First Officer</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="3333333-third-duty" required>
+                                                                                    <option value="" selected>선택</option>
+                                                                                    <option value="1">1: PIC or Pairing crew with PIC</option>
+                                                                                    <option value="2">2: Non-PIC or Pairing Crew with Non-PIC</option>
+                                                                                    <option value="3">3: Captain (Assigned only for Right), F/O (Qualified for Left)</option>
+                                                                                    <option value="R">R: Route Training (OE)</option>
+                                                                                    <option value="O">O: Observer</option>
+                                                                                    <option value="S">S: Safety Crew</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="K">K: Check Airman as MOLIT</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="X">X: Extra (Dead head) Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -675,40 +684,52 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>4</td>
-                                                                <td>홍길동_41247</td>
                                                                 <td>
+                                                                    홍길동_4444444
+                                                                </td>
+                                                                <td class="pb-0">
                                                                     <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_first_4" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="4444444-first-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="2">2: 1 Set Crew</option>
+                                                                                    <option value="3">3: 3 Pilot</option>
+                                                                                    <option value="4">4: 2 Set Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group row mb-3">
-                                                                                <select class="col-11 custom-select custom-select-sm" id="duty_second_4" required>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="4444444-second-duty" required>
                                                                                     <option value="" selected>선택</option>
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
-                                                                                    <option value="6">6</option>
-                                                                                    <option value="7">7</option>
-                                                                                    <option value="8">8</option>
-                                                                                    <option value="9">9</option>
-                                                                                    <option value="10">10</option>
+                                                                                    <option value="C">C: Captain</option>
+                                                                                    <option value="I">I: Instructor</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="T">T: Instructor (Local Flight)</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="D">D: Student (Local Flight)</option>
+                                                                                    <option value="F">F: First Officer</option>
+                                                                                    <option value="U">U: Upgrade First Officer</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <select class="custom-select custom-select-sm" id="4444444-third-duty" required>
+                                                                                    <option value="" selected>선택</option>
+                                                                                    <option value="1">1: PIC or Pairing crew with PIC</option>
+                                                                                    <option value="2">2: Non-PIC or Pairing Crew with Non-PIC</option>
+                                                                                    <option value="3">3: Captain (Assigned only for Right), F/O (Qualified for Left)</option>
+                                                                                    <option value="R">R: Route Training (OE)</option>
+                                                                                    <option value="O">O: Observer</option>
+                                                                                    <option value="S">S: Safety Crew</option>
+                                                                                    <option value="Y">Y: Auditor</option>
+                                                                                    <option value="K">K: Check Airman as MOLIT</option>
+                                                                                    <option value="H">H: Company Check Airman</option>
+                                                                                    <option value="E">E: Evaluation Captain</option>
+                                                                                    <option value="X">X: Extra (Dead head) Crew</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -723,7 +744,7 @@
                                         <!-- end crew information -->
 
                                         <!-- start flight information -->
-                                        <div class="row mb-4">
+                                        <div class="row mb-2">
                                             <h5 class=" mt-4 text-dark font-24">
                                                 Flight Information
                                             </h5>
@@ -731,18 +752,18 @@
 
                                         <!-- OUT OFF -->
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="OUT" class="col-4 col-form-label font-16">OUT</label>
-                                                    <div class="col-8">
+                                                    <label for="OUT" class="col-3 col-form-label font-16">OUT</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "HH:MM"' id="form_out" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="OFF" class="col-4 col-form-label font-16">OFF</label>
-                                                    <div class="col-8">
+                                                    <label for="OFF" class="col-3 col-form-label font-16">OFF</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "HH:MM"' id="form_off" required>
                                                     </div>
                                                 </div>
@@ -752,18 +773,18 @@
 
                                         <!-- IN ON -->
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="IN" class="col-4 col-form-label font-16">IN</label>
-                                                    <div class="col-8">
+                                                    <label for="IN" class="col-3 col-form-label font-16">IN</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "HH:MM"' id="form_in" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="ON" class="col-4 col-form-label font-16">ON</label>
-                                                    <div class="col-8">
+                                                    <label for="ON" class="col-3 col-form-label font-16">ON</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "HH:MM"' id="form_on" required>
                                                     </div>
                                                 </div>
@@ -773,18 +794,18 @@
 
                                         <!-- BLOCK ACTUAL -->
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="BLOCK" class="col-4 col-form-label font-16">BLOCK</label>
-                                                    <div class="col-8">
+                                                    <label for="BLOCK" class="col-3 col-form-label font-16">BLOCK</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "01+08"' id="form_block" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="ACTUAL" class="col-4 col-form-label font-16">ACTUAL</label>
-                                                    <div class="col-8">
+                                                    <label for="ACTUAL" class="col-3 col-form-label font-16">ACTUAL</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "00+52"' id="form_actual" required>
                                                     </div>
                                                 </div>
@@ -794,18 +815,18 @@
 
                                         <!-- NIGHT INST -->
                                         <div class="row mb-2">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="NIGHT" class="col-4 col-form-label font-16">NIGHT</label>
-                                                    <div class="col-8">
+                                                    <label for="NIGHT" class="col-3 col-form-label font-16">NIGHT</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "00+05"' id="form_night" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="INST" class="col-4 col-form-label font-16">INST</label>
-                                                    <div class="col-8">
+                                                    <label for="INST" class="col-3 col-form-label font-16">INST</label>
+                                                    <div class="col-7">
                                                         <input type="text" class="form-control text-center" placeholder='e.g "00+46"' id="form_inst" required>
                                                     </div>
                                                 </div>
@@ -818,8 +839,8 @@
                                             <div class="col-md-6">
                                                 <div class="form-group row mb-3">
                                                     <label for="TOGA" class="col-3 col-form-label font-16">TOGA</label>
-                                                    <div class="col-8">
-                                                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
+                                                    <div class="col-7">
+                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                             <label class="btn btn-outline-info pl-4 pr-4 active">
                                                               <input type="radio" name="toga-options" id="toga-option1" autocomplete="off" checked> YES
                                                             </label>
@@ -835,10 +856,10 @@
 
                                         <!-- T/O CREW L/D CREW -->
                                         <div class="row mt-2">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="T/O CREW" class="col-4 col-form-label font-16">T/O CREW</label>
-                                                    <select class="col-5 custom-select" id="form_tocrew" required>
+                                                    <label for="T/O CREW" class="col-3 col-form-label font-16">T/O CREW</label>
+                                                    <select class="col-7 custom-select ml-2" id="form_tocrew" required>
                                                         <option value="" selected>선택</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -853,10 +874,10 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="L/D CREW" class="col-4 col-form-label font-16">L/D CREW</label>
-                                                    <select class="col-5 custom-select" id="form_ldcrew" required>
+                                                    <label for="L/D CREW" class="col-3 col-form-label font-16">L/D CREW</label>
+                                                    <select class="col-7 custom-select ml-2" id="form_ldcrew" required>
                                                         <option value="" selected>선택</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -876,11 +897,11 @@
 
                                         <!-- AUTO L/D -->
                                         <div class="row mt-2">
-                                            <div class="col-md-10">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="AUTOR/W" class="col-2 col-form-label font-16">AUTO L/D</label>
-                                                    <div class="col-8 align-self-center font-16">
-                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                    <label for="AUTOR/W" class="col-md-3 col-form-label font-16">AUTO L/D</label>
+                                                    <div class="col-md-7 align-self-center font-16">
+                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons" id="auto_ld">
                                                             <label class="btn btn-outline-info pl-4 pr-4 active">
                                                               <input type="radio" name="ld-options" id="ld-option1" autocomplete="off" checked> Satisfactory
                                                             </label>
@@ -899,21 +920,11 @@
 
                                         <!-- AUTO R/W -->
                                         <div class="row mt-2">
-                                            <div class="col-md-10">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="AUTOR/W" class="col-2 col-form-label font-16">AUTO R/W</label>
-                                                    <div class="col-8 align-self-center font-16">
-                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                            <label class="btn btn-outline-info pl-4 pr-4 active">
-                                                              <input type="radio" name="rw-options" id="rw-option1" autocomplete="off" checked> Satisfactory
-                                                            </label>
-                                                            <label class="btn btn-outline-info pl-4 pr-4">
-                                                              <input type="radio" name="rw-options" id="rw-option2" autocomplete="off"> Unsatisfactory
-                                                            </label>
-                                                            <label class="btn btn-outline-info pl-4 pr-4">
-                                                                <input type="radio" name="rw-options" id="rw-option3" autocomplete="off"> None
-                                                              </label>
-                                                        </div>
+                                                    <label for="AUTOR/W" class="col-md-3 col-form-label font-16">AUTO R/W</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" placeholder='e.g ""' id="autorw" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -922,21 +933,11 @@
 
                                         <!-- AUTO VIS -->
                                         <div class="row mt-2">
-                                            <div class="col-md-10">
+                                            <div class="col-md-6">
                                                 <div class="form-group row mb-3">
-                                                    <label for="AUTOVIS" class="col-2 col-form-label font-16">AUTO VIS</label>
-                                                    <div class="col-8 align-self-center font-16">
-                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                            <label class="btn btn-outline-info pl-4 pr-4 active">
-                                                              <input type="radio" name="vis-options" id="vis-option1" autocomplete="off" checked> Satisfactory
-                                                            </label>
-                                                            <label class="btn btn-outline-info pl-4 pr-4">
-                                                              <input type="radio" name="vis-options" id="vis-option2" autocomplete="off"> Unsatisfactory
-                                                            </label>
-                                                            <label class="btn btn-outline-info pl-4 pr-4">
-                                                                <input type="radio" name="vis-options" id="vis-option3" autocomplete="off"> None
-                                                              </label>
-                                                        </div>
+                                                    <label for="AUTOVIS" class="col-md-3 col-form-label font-16">AUTO VIS</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" placeholder='e.g ""' id="autovis" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -946,10 +947,9 @@
 
                                         <!-- submit button-->
                                         <div class="row mt-4 mb-4">
-                                            <div class="col-5"></div>
-                                            <div class="col-2">
+                                            <div class="col-12 text-center">
                                                 <!-- Top modal -->
-                                                <button type="button" class="btn btn-info btn-lg pl-4 pr-4" data-toggle="modal" data-target="#confirm-modal">Submit</button>
+                                                <button type="button" class="btn btn-primary pl-4 pr-4" data-toggle="modal" data-target="#confirm-modal">Submit</button>
                                                 <div id="confirm-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
@@ -973,9 +973,10 @@
                                                 </div>
                                                 <!-- /.modal -->
                                             </div>
-                                            <div class="col-5"></div>
                                         </div>
                                         <!-- end submit button -->
+
+                                        
 
                                     </div>
                                     <!-- end card body-->
@@ -1027,7 +1028,6 @@
     <script src="assets/js/app.min.js"></script>
 
     <!-- third party js -->
-    <script src="assets/js/vendor/apexcharts.min.js"></script>
     <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
     <!-- third party js ends -->
@@ -1039,9 +1039,6 @@
     <!-- Todo js -->
     <script src="assets/js/ui/component.todo.js"></script>
 
-    <!-- demo app -->
-    <script src="assets/js/pages/demo.dashboard.js"></script>
-    <!-- end demo js-->
 
     <!-- demo app -->
     <script src="assets/js/pages/demo.calendar.js"></script>
@@ -1076,12 +1073,46 @@
             }
             // valid, do something else ...
         });
-        
-       
 
+        var windowWidth = $(window).width();
+        if(windowWidth < 600) { 
+            $("#auto_vis").removeClass("btn-group")
+            $("#auto_ld").removeClass("btn-group")
+            $("#auto_rw").removeClass("btn-group")
+            $("#auto_vis").addClass("btn-group-vertical")
+            $("#auto_ld").addClass("btn-group-vertical")
+            $("#auto_rw").addClass("btn-group-vertical")
+        }
+        else {
+            $("#auto_vis").addClass("btn-group")
+            $("#auto_ld").addClass("btn-group")
+            $("#auto_rw").addClass("btn-group")
+            $("#auto_vis").removeClass("btn-group-vertical")
+            $("#auto_ld").removeClass("btn-group-vertical")
+            $("#auto_rw").removeClass("btn-group-vertical")
+        }
+        $(window).resize(function() {
+            var windowWidth = $(window).width();
+            if(windowWidth < 600) { 
+                $("#auto_vis").removeClass("btn-group")
+                $("#auto_ld").removeClass("btn-group")
+                $("#auto_rw").removeClass("btn-group")
+                $("#auto_vis").addClass("btn-group-vertical")
+                $("#auto_ld").addClass("btn-group-vertical")
+                $("#auto_rw").addClass("btn-group-vertical")
+            } else {
+                $("#auto_vis").addClass("btn-group")
+                $("#auto_ld").addClass("btn-group")
+                $("#auto_rw").addClass("btn-group")
+                $("#auto_vis").removeClass("btn-group-vertical")
+                $("#auto_ld").removeClass("btn-group-vertical")
+                $("#auto_rw").removeClass("btn-group-vertical")
+            }
+        });
         /////////////////////////////////////
         //              etc-end            //
         /////////////////////////////////////
+        
 
     </script>
 </body>

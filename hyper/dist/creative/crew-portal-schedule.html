@@ -53,42 +53,22 @@
                         </a>
                     </li>
                     <li class="side-nav-item">
-                        <a href="javascript: void(0);" class="side-nav-link">
+                        <a href="crew-portal-calendar.html" class="side-nav-link">
                             <i class="uil-calendar-alt"></i>
-                            <span> Management </span>
-                            <span class="menu-arrow"></span>
+                            <span> Calendar </span>
                         </a>
-                        <ul class="side-nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="crew-portal-calendar.html">Calendar</a>
-                            </li>
-                            <li>
-                                <a href="crew-portal-schedule.html">Schedule</a>
-                            </li>
-                            <li>
-                                <a href="crew-portal-flightlog.html">New Flight Log</a>
-                            </li>
-                          
-                        </ul>
                     </li>
                     <li class="side-nav-item">
-                        <a href="javascript: void(0);" class="side-nav-link">
-                            <i class=" uil-css"></i>
+                        <a href="crew-portal-recency.html" class="side-nav-link">
+                            <i class="mdi mdi-clock-check-outline"></i>
                             <span> Recency </span>
-                            <span class="menu-arrow"></span>
                         </a>
-                        <ul class="side-nav-second-level" aria-expanded="false">
-                            <li>
-                                <a href="apps-ecommerce-products.html">Flight Log</a>
-                            </li>
-                            <li>
-                                <a href="apps-ecommerce-products-details.html">Expiry</a>
-                            </li>
-                            <li>
-                                <a href="apps-ecommerce-orders.html">YP File</a>
-                            </li>
-                            
-                        </ul>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="crew-portal-admin.html" class="side-nav-link">
+                            <i class="mdi mdi-account-cog"></i>
+                            <span> Admin </span>
+                        </a>
                     </li>
                 </ul>
                 <!-- End Sidebar -->
@@ -413,37 +393,28 @@
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row mb-4">
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-10">
-                            <div class="page-title-box">
-                                <div class="row page-title-right ml-4 mt-1 mb-1">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">AP Portal 2.0</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Crew Portal</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Canlendar</a></li>
-                                        <li class="breadcrumb-item active">Schedule</li>
-                                    </ol>
-                                </div>
-                                <a href="crew-portal-calendar.html" class="page-title mt-1 mb-1 font-20">
+                    <div class="row">
+                        <div class="col-12 mt-2">
+                                <a href="crew-portal-calendar.html" class="page-title font-20 text-dark">
                                     <span>
-                                        <strong><&nbsp;&nbsp; Calendar</strong>
+                                        <strong><&nbsp;&nbsp;Back</strong>
                                     </span>
                                 </a>
-                                <h1 class="text-center"> <span class="font-weight-normal font-24"> 2021-01-31</span>&emsp; YP1234</h1>
-                            </div>
                         </div>
+                        <h1 class="text-dark mt-3 ml-3 mb-2">
+                            2021-01-31&emsp; YP1234</h1>
+                        </h1>
                     </div>
                     <!-- end page title -->
 
-                    <div class="row mt-4">
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="card">
+                    <div class="row mb-4">
+                        <!-- start flight information --> 
+                        <div class="col-md-8 mt-4">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h4 class="header-title font-16 text-dark">비행 정보</h4>
                                     <div class="row mt-2">
-                                        <div class="col-sm-2 text-center pr-0">
+                                        <div class="col-md-2 text-center pr-0">
                                             <h5>출발지 날씨</h5>
                                                 <img src="assets/images/users/weather-1.png" class="rounded-circle avatar-md img-thumbnail mb-1"
                                                 alt="weather-image">
@@ -454,12 +425,12 @@
                                                 <p class="text-muted m-0 font-12"><strong>운고:</strong> 3,000ft</p>
                                         </div> 
                                         <!-- end col-->
-                                        <div class="col-sm-2 text-right pl-0 mt-2">
+                                        <div class="col-md-2 text-right pl-0 mt-2">
                                             <h3>HAN</h3>
                                             <h3>12:00</h3>
                                         </div> 
                                         <!-- end col-->
-                                        <div class="col-sm-4">
+                                        <div class="col-md-4">
                                             <div class="horizontal-steps mt-4 mb-0 pl-0 pr-0">
                                                 <div class="horizontal-steps-content">
                                                     <div class="step-item"></div>
@@ -472,12 +443,12 @@
                                             </div>
                                         </div> 
                                         <!-- end col-->
-                                        <div class="col-sm-2 text-left pr-0 mt-2">
+                                        <div class="col-md-2 text-left pr-0 mt-2">
                                             <h3>ICN</h3>
                                             <h3>18:00</h3>
                                         </div> 
                                         <!-- end col-->
-                                        <div class="col-sm-2 text-center pl-0">
+                                        <div class="col-md-2 text-center pl-0">
                                             <h5>도착지 날씨</h5>
                                                 <img src="assets/images/users/weather-2.png" class="rounded-circle avatar-md img-thumbnail mb-1"
                                                 alt="weather-image">
@@ -492,20 +463,35 @@
                                 </div>
                                 <!-- end card-body-->
                             </div>    
+                            <!-- end card --> 
+                        </div>
+                        <!-- end flight information --> 
+
+                        <!-- start NOTAM-->
+                        <div class="col-md-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="header-title font-16 text-dark">NOTAM</h4>
+                                    <div class="row mt-2 pl-2">
+                                        내용
+                                    </div>
+                                </div>
+                                <!-- end card-body-->
+                            </div>    
                             <!-- end row --> 
                         </div>
-                        <div class="col-xl-2 col-lg-4">
-                            
-                        </div>
+                        <!-- end NOTAM --> 
                     </div>
+                    <!-- end row -->
+
                     <div class="row">
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-4 col-lg-5">
-                            <!-- news -->
+                        <!-- start Maintaince list -->
+                        <div class="col-md-5">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="header-title mb-1 font-18 text-dark">HL8738 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B787-9</h4>
+                                    <h4 class="header-title mb-1 font-18 text-dark">HL8738&emsp;B787-9</h4>
                                     <div data-simplebar data-simplebar-primary style="height: 250px;">
+                                        <!-- Maintaince item -->
                                         <div class="media mt-3">
                                             <i class='uil-cog mr-1 font-16 text-primary'></i>
                                             <div class="media-body">
@@ -517,6 +503,7 @@
                                                 </a>
                                             </div>
                                         </div>
+                                        <!-- item end -->
                                         <div class="media mt-3">
                                             <i class='uil-cog mr-1 font-16 text-primary'></i>
                                             <div class="media-body">
@@ -573,22 +560,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
+                                    <!-- end simplebar -->
+                                </div> 
+                                <!-- end card-body-->
+                            </div> 
+                            <!-- end card-->
                         </div>
-                        <div class="col-xl-6 col-lg-7">
-                            
+                        <!-- end Maintaince list -->
+                        <!-- start previous flight information -->
+                        <div class="col-md-7">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title mb-1 font-18 text-dark">이전 비행 정보</h4>
                                     <div class="row mt-4 mb-4">
-                                        <div class="col-sm-3 text-center align-self-center pr-0">
+                                        <div class="col-md-3 text-center align-self-center pr-0">
                                             <h2>HAN</h2>
                                             <h5>2018-08-20</h5>
                                             <h5> 07:24 PM</h5>
-                                        </div> <!-- end col-->
+                                        </div> 
+                                        <!-- end col-->
                                         
-                                        <div class="col-sm-6 pl-0 pr-0">
+                                        <div class="col-md-6 pl-0 pr-0">
                                             <div class="text-center mr-3">
                                                 <span class="font-14">Flight Times : 6h 40m</span>
                                             </div>
@@ -599,42 +591,53 @@
                                                 </div>
                                                 <i class="mdi mdi-airplane mdi-rotate-90 mdi-48px text-primary"></i>
                                             </div>
-                                        </div> <!-- end col-->
-                                        <div class="col-sm-3 text-center align-self-center pl-0">
+                                        </div> 
+                                        <!-- end col-->
+
+                                        <div class="col-md-3 text-center align-self-center pl-0">
                                             <h2>ICN</h2>
                                             <h5>2018-08-20</h5>
                                             <h5> 07:24 PM</h5>
-                                        </div> <!-- end col-->
+                                        </div> 
+                                        <!-- end col-->
                                     </div>
+                                    <!-- end row-->
                                     <div class="row mb-1">
-                                        <div class="col-sm-1"></div>
-                                        <div class="col-sm-10 w-100 btn-group mb-2">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10 w-100 btn-group mb-2">
                                             <button type="button" class="btn btn-primary text-center w-50">< Previous flight</button>
                                             <button type="button" class="btn btn-primary text-center w-50" disabled>Next flight ></button>
                                         </div>
                                     </div>
+                                    <!-- end row-->
                                 </div>
                                 <!-- end card-body-->
                             </div>    
-                            <!-- end row --> 
+                            <!-- end card --> 
                         </div>
+                        <!-- end previous flight information -->
                     </div>
+                    <!-- end row-->
 
                     <div class="row">
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-4 col-lg-5">
+                        <!-- start Reservation status left -->
+                        <div class="col-lg-5">
                             <div class="card widget-flat" >
                                 <div class="card-body">
                                     <h5 class="text-dark font-18 mt-0" title="Number of Customers">Reservation status</h5>
                                     <h1 class="text-center pt-3 mb-0"><i class="mdi mdi-account-multiple mdi-48px"></i></h1>
                                     <h3 class="text-center font-24 font-weight-normal mt-2 mb-3">Total number of people</h3>
                                     <h3 class="text-center mt-3 mb-3">309 명</h3>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col -->
-                        <div class="col-xl-6 col-lg-7">
+                                </div> 
+                                <!-- end card-body-->
+                            </div> 
+                            <!-- end card-->
+                        </div> 
+                        <!-- end Reservation status left -->
+                        <!-- start Reservation status right -->
+                        <div class="col-lg-7">
                             <div class="row no-gutters">
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="card widget-flat">
                                         <div class="card-body">
                                             <div class="float-right">
@@ -642,11 +645,14 @@
                                             </div>
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">Adult</h5>
                                             <h3 class="mt-3 mb-1">290 명</h3>
-                                        </div> <!-- end card-body-->
-                                    </div> <!-- end card-->
-                                </div> <!-- end col-->
+                                        </div> 
+                                        <!-- end card-body-->
+                                    </div> 
+                                    <!-- end card-->
+                                </div> 
+                                <!-- end col-->
 
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="card widget-flat">
                                         <div class="card-body">
                                             <div class="float-right">
@@ -654,11 +660,14 @@
                                             </div>
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">Child</h5>
                                             <h3 class="mt-3 mb-1">10 명</h3>
-                                        </div> <!-- end card-body-->
-                                    </div> <!-- end card-->
-                                </div> <!-- end col-->
+                                        </div> 
+                                        <!-- end card-body-->
+                                    </div> 
+                                    <!-- end card-->
+                                </div> 
+                                <!-- end col-->
 
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="card widget-flat">
                                         <div class="card-body">
                                             <div class="float-right">
@@ -666,13 +675,17 @@
                                             </div>
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">Infant</h5>
                                             <h3 class="mt-3 mb-1">9 명</h3>
-                                        </div> <!-- end card-body-->
-                                    </div> <!-- end card-->
-                                </div> <!-- end col-->         
-                            </div> <!-- end row -->
+                                        </div> 
+                                        <!-- end card-body-->
+                                    </div> 
+                                    <!-- end card-->
+                                </div> 
+                                <!-- end col-->         
+                            </div> 
+                            <!-- end row -->
 
                             <div class="row no-gutters">
-                                <div class="col-lg-6">
+                                <div class="col-md-6">
                                     <div class="card widget-flat">
                                         <div class="card-body">
                                             <div class="float-right">
@@ -680,10 +693,13 @@
                                             </div>
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">Male</h5>
                                             <h3 class="mt-3 mb-1">290 명</h3>
-                                        </div> <!-- end card-body-->
-                                    </div> <!-- end card-->
-                                </div> <!-- end col-->
-                                <div class="col-lg-6">
+                                        </div> 
+                                        <!-- end card-body-->
+                                    </div> 
+                                    <!-- end card-->
+                                </div> 
+                                <!-- end col-->
+                                <div class="col-md-6">
                                     <div class="card widget-flat">
                                         <div class="card-body">
                                             <div class="float-right">
@@ -691,23 +707,24 @@
                                             </div>
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">Female</h5>
                                             <h3 class="mt-3 mb-1">290 명</h3>
-                                        </div> <!-- end card-body-->
-                                    </div> <!-- end card-->
-                                </div> <!-- end col-->
-                            </div> <!-- end row -->
+                                        </div> 
+                                        <!-- end card-body-->
+                                    </div> 
+                                    <!-- end card-->
+                                </div> 
+                                <!-- end col-->
+                            </div> 
+                            <!-- end row -->
 
-                        </div> <!-- end col -->
-
-                        
+                        </div> 
+                        <!-- end Reservation status right -->
                     </div>
                     <!-- end row -->
 
                     <!-- Crew List & Preflight Check List -->
-                    <div class="row"> 
-                        <div class="col-xl-1"></div>
+                    <div class="row">
                         <!-- start Crew List -->
-                        <div class="tasks col-xl-5 col-md-6 mr-0 border-0">
-                            
+                        <div class="tasks col-md-6 mr-0 border-0">
                             <div class="card">
                                 <div class="card-body p-0">
                                     <h5 class="ml-4 mt-4 mr-4 mb-0 text-dark font-24">
@@ -932,7 +949,8 @@
                                                         </div>
                                                     </div>
                                                 </a>
-                                            </div> <!-- End col -->
+                                            </div> 
+                                            <!-- end col -->
                                         </div>
                                         <!-- end user -->
 
@@ -946,7 +964,7 @@
                         <!-- end Crew List -->
 
                         <!-- start Preflight Check List -->
-                        <div class="tasks col-xl-5 col-md-6 border-0">
+                        <div class="tasks col-md-6 border-0">
                             <div class="card">
                                 <div class="card-body p-0">
                                     <h5 class="ml-4 mt-4 mr-4 mb-0 text-dark font-24">
@@ -963,7 +981,7 @@
                                                 </div> 
                                                 <!-- end .todoapp-->
                                             </div> 
-                                            <!-- End col -->
+                                            <!-- end col -->
                                         </div>
                                         <!-- end check list -->
                                     </div> 
@@ -974,8 +992,10 @@
                             <!-- end card-->
                         </div>
                         <!-- end Preflight Check List -->
+                        
                     </div>
                     <!-- end row -->
+                    
                 </div>
                 <!-- container -->
             </div>
@@ -1015,7 +1035,6 @@
     <script src="assets/js/app.min.js"></script>
 
     <!-- third party js -->
-    <script src="assets/js/vendor/apexcharts.min.js"></script>
     <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
     <!-- third party js ends -->
@@ -1027,9 +1046,6 @@
     <!-- Todo js -->
     <script src="assets/js/ui/component.todo.js"></script>
 
-    <!-- demo app -->
-    <script src="assets/js/pages/demo.dashboard.js"></script>
-    <!-- end demo js-->
 
     <!-- demo app -->
     <script src="assets/js/pages/demo.calendar.js"></script>
@@ -1042,7 +1058,6 @@
         //////////////////////////////////
 
         // permission badge hide
-        $(document).find(".user-row-1 i-").hide();
         $(document).find("i.widget-icon").show();
 
 

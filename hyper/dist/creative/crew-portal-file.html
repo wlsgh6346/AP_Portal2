@@ -11,14 +11,16 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- third party css -->
-    <link href="assets/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/vendor/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/vendor/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/vendor/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/vendor/select.bootstrap4.css" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
-    
+
     <!-- App css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
     <link href="assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
-
 
 </head>
 
@@ -390,249 +392,115 @@
 
                 <!-- Start Content-->
                 <div class="container-fluid">
-                    
                     <!-- start page title -->
                     <div class="row">
+                        <div class="col-12 mt-2">
+                                <a href="crew-portal-Recency.html" class="page-title font-20 text-dark">
+                                    <span>
+                                        <strong><&nbsp;&nbsp;Back</strong>
+                                    </span>
+                                </a>
+                        </div>
                         <h1 class="text-dark mt-3 ml-3 mb-2">
-                            Calendar
+                            ICN</h1>
                         </h1>
                     </div>
                     <!-- end page title -->
-                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- Plane Information -->
-                            <div class="mt-2">
-                                <a class="text-dark" data-toggle="collapse" href="#information" aria-expanded="false"
-                                    aria-controls="AFT">
-                                    <h5 class="mb-2 font-20">
-                                        <i class='uil uil-angle-down font-24'></i>Plane Information
-                                    </h5>
-                                </a>
-                                <div class="collapse show" id="information">
-                                    <div class="card mb-3">
-                                        <div class="card-body">
-                                            <h5 class="m-0 ml-2 mb-4 p-0 text-dark font-18">
-                                                Actual Flight Times
-                                            </h5>
-                                            <div class="row no-gutters">
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-departure text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>33:49</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 28 Days</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>37:59</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Month</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-arrival text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>520:00</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 1 Years</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-fly text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>480:00</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Year</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                            </div> 
-                                            <!-- end row -->
-
-                                            <h5 class="m-0 p-0 ml-2 mt-4 mb-4 text-dark font-18">
-                                                Actual Duty Times
-                                            </h5>
-                                            <div class="row no-gutters">
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-departure text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>78:25</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 28 Days</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>83:31</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Month</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-arrival text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>1027:36</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 1 Years</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-fly text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>753:27</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Year</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                            </div> 
-                                            <!-- end row -->
-
-                                            <h5 class="m-0 p-0 ml-2 mt-4 mb-4 text-dark font-18">
-                                                DeadHead Times
-                                            </h5>
-                                            <div class="row no-gutters mb-4">
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-departure text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>00:00</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 28 Days</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>00:00</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Month</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-arrival text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>07:15</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Latest 1 Years</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="col-md-3">
-                                                    <div class="card shadow-none m-0 border-left">
-                                                        <div class="card-body text-center p-0">
-                                                            <i class="uil-plane-fly text-muted" style="font-size: 24px;"></i>
-                                                            <h3><span>03:44</span></h3>
-                                                            <p class="text-muted font-15 mb-0">Current Year</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                            <!-- end row -->
-                                        </div> 
-                                        <!-- end card-body-->
-                                    </div> 
-                                    <!-- end card -->
-                                </div> 
-                                <!-- end .collapse-->
-                            </div> 
-                            <!-- end Plane Information -->
-                        </div> 
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
 
                     <div class="row">
-                        <div class="col-12">
+                        <!-- start permission right -->
+                        <div class="tasks col-12 mt-2 border-secondary bg-white h-100">
+                            <div data-simplebar style="max-height: 610px; min-height:610px" class="mt-2">
+                                <div id="task-list" class="task-list-items">
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <div id="calendar"></div>
-                                </div> <!-- end card body-->
-                            </div> <!-- end card -->
 
-                            <!-- Add New Event MODAL -->
-                            <div class="modal fade" id="event-modal" tabindex="-1">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header pr-4 pl-4 border-bottom-0 d-block">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">Calendar</h4>
-                                        </div>
-                                        <div class="modal-body pt-3 pr-4 pl-4 mb-2"></div>
-                                        <div class="text-right pb-4 pr-4">
-                                            <button type="button" class="btn btn-success save-event">예</button>
-                                            <button type="button" class="btn btn-light " data-dismiss="modal">아니오</button>
-                                            <button type="button" class="btn btn-danger delete-event float-left ml-3" data-dismiss="modal">삭제</button>
-                                        </div>
-                                    </div> <!-- end modal-content-->
-                                </div> <!-- end modal dialog-->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+                                        <!-- document !!! -->
+
+                                </div>
+                                <!-- end company-list-4-->
                             </div>
-                            <!-- end modal-->
-
-                            <!-- Modal Add Category -->
-                            <div class="modal fade" id="add-category" tabindex="-1">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header border-bottom-0 d-block">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">Add a category</h4>
-                                        </div>
-                                        <div class="modal-body p-4">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label class="control-label">Category Name</label>
-                                                    <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name"/>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label">Choose Category Color</label>
-                                                    <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
-                                                        <option value="primary">Primary</option>
-                                                        <option value="success">Success</option>
-                                                        <option value="danger">Danger</option>
-                                                        <option value="info">Info</option>
-                                                        <option value="warning">Warning</option>
-                                                        <option value="dark">Dark</option>
-                                                    </select>
-                                                </div>
-
-                                            </form>
-
-                                            <div class="text-right">
-                                                <button type="button" class="btn btn-light " data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary ml-1 save-category" data-dismiss="modal">Save</button>
-                                            </div>
-
-                                        </div> <!-- end modal-body-->
-                                    </div> <!-- end modal-content-->
-                                </div> <!-- end modal dialog-->
-                            </div>
-                            <!-- end modal-->
                         </div>
-                        <!-- end col-12 -->
-                    </div> <!-- end row -->
+                        <!-- end permission right -->
+                    </div>
+                    
+                    <div class="row">
+                        <!-- button -->
+                        <div class="col-12 text-center mt-4 mb-4">
+                            <!-- Top modal -->
+                            <button type="button" class="btn btn-primary mr-1" data-toggle="modal"
+                                data-target="#confirm-modal"> Done </button>
+                            <div id="confirm-modal" class="modal fade" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="topModalLabel">
+                                                ICN</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            완료하시겠습니까?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary"
+                                            onclick="location.href='./crew-portal-recency.html'; return;">
+                                                예
+                                            </button>
+                                            <button type="button" class="btn btn-light"
+                                                data-dismiss="modal">아니오</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+
+                            <!-- cancel modal -->
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                data-target="#cancel-modal"> Quiz </button>
+                            <div id="cancel-modal" class="modal fade" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="topModalLabel">
+                                                Quiz</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Quize를 수행하시겠습니까?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary"
+                                                onclick="location.href = './crew-portal-quiz.html'">
+                                                예
+                                            </button>
+                                            <button type="button" class="btn btn-light"
+                                                data-dismiss="modal">아니오</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+
+                        </div>
+                        <!-- end button -->
+                    </div>
 
 
                 </div>
@@ -668,48 +536,57 @@
     <!-- END wrapper -->
 
     <!-- bundle -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/app.min.js"></script>
-    
-    
+
     <!-- third party js -->
-    <script src="assets/js/vendor/jquery-ui.min.js"></script>
-    <script src="assets/js/vendor/fullcalendar.min.js"></script>
-    
+    <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+    <script src="assets/js/vendor/dataTables.bootstrap4.js"></script>
+    <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+    <script src="assets/js/vendor/responsive.bootstrap4.min.js"></script>
+    <script src="assets/js/vendor/dataTables.buttons.min.js"></script>
+    <script src="assets/js/vendor/buttons.bootstrap4.min.js"></script>
+    <script src="assets/js/vendor/buttons.html5.min.js"></script>
+    <script src="assets/js/vendor/buttons.flash.min.js"></script>
+    <script src="assets/js/vendor/buttons.print.min.js"></script>
+    <script src="assets/js/vendor/dataTables.keyTable.min.js"></script>
+    <script src="assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.js" integrity="sha512-18QiVdJv36r1ryb5mr1lFpm4wZMORhvGgvz0mHQllOmx3NmSZkYwWuDcecFByaRVWqiQ0F/FZC5pCBMuy8IfkQ==" crossorigin="anonymous"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
-    <script src="assets/js/pages/demo.calendar.js"></script>
+    <script src="assets/js/pages/demo.datatable-init.js"></script>
     <!-- end demo js-->
 
     <script>
         $(document).ready(function() {
-            var e = $(document).find('.fc-title');
-            var v = e.html().split(' ');
-            e.html(
-                "<div class = 'fc-title w-100'>" + 
-                    "<h5 class='m-0'><p class='badge badge-warning mb-1'>" + v[0] + "</p>" + "<br>" + "</h5>" +
-                    "<h6 class ='m-0'><p class='badge badge-warning mb-0'>" + v[2] + '<br>' + v[1] + 
-                    "</p> <i class='mdi mdi-arrow-right-thick text-warning font-24'></i> <p class='badge badge-warning mb-0'>" + 
-                    v[3] + "<br>" + v[4] + "</p></h6>" +
-                "</div>"
-            );
+            $('.custom-daterange-item').on("click", function (e) {
+                var target = e.target;
+                if ($(target).html() == "MONTH") {
+                    $('.custom-daterange-menu').html('MONTH');
+                    $('.custom-daterange').html(`
+                    <input class="form-control col-12" id="example-month" type="month" name="month">`);
+                } else if ($(target).html() == "PERIOD") {
+                    $('.custom-daterange-menu').html('PERIOD');
+                    $('.custom-daterange').html(`
+                    <div class="row col-12 m-0 p-0">
+                    <input class="form-control col-5" id="example-date" type="date" name="date">
+                    <div class="col-2 text-center pt-1">~</div>
+                    <input class="form-control col-5" id="example-date" type="date" name="date">
+                    </div>`);
+                }
+            });
+
+            
+            $('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
+                $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+            } );
         });
-       
-        $('.fc-button, .fc-icon').on("click", function () {
-            var e = $(document).find('.fc-title');
-            var v = e.html().split(' ');
-            e.html(
-                "<div class = 'fc-title w-100'>" + 
-                    "<h5 class='m-0'><p class='badge badge-warning mb-1'>" + v[0] + "</p>" + "<br>" + "</h5>" +
-                    "<h6 class ='m-0'><p class='badge badge-warning mb-0'>" + v[2] + '<br>' + v[1] + 
-                    "</p> <i class='mdi mdi-arrow-right-thick text-warning font-24'></i> <p class='badge badge-warning mb-0'>" + 
-                    v[3] + "<br>" + v[4] + "</p></h6>" +
-                "</div>"
-            );
-        });
+
+        
+        
     </script>
+
 </body>
 
 </html>
