@@ -19,6 +19,10 @@
           - crew-portal-calendar.html   --- crew-portal의 일정 페이지
           - crew-portal-schedule.html   --- crew-portal의 현황판 페이지
           - crew-portal-flightlog.html  --- crew-portal의 New Flight Log의 write 페이지
+          - crew-portal-file.html  --- crew-portal의 recency의 각 airprot route 별 문서 페이지
+          - crew-portal-quiz.html  --- crew-portal의 recency의 quiz 문제 페이지
+          - crew-portal-quizresult.html  --- crew-portal의 recency의 quiz의 결과 페이지
+          - crew-portal-recency.html  --- crew-portal의 recency를 나타내는 페이지
 
      ● AP_Portal Chart
           - prototype-chart --- 운항 정보 분석을 위한 chart templete 제작
