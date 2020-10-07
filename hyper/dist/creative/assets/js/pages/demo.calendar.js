@@ -61,13 +61,7 @@
                 start: 'Thu Sep 21 2020 08:00:00 GMT+0900',
                 end: 'Thu Sep 21 2020 13:00:00 GMT+0900',
                 className: "bg-warning-lighten",
-            }, {
-                _id: eventId,
-                title: 'YP127 08:00 ICN HAN 13:00',
-                start: 'Thu Sep 27 2020 08:00:00 GMT+0900',
-                end: 'Thu Sep 27 2020 13:00:00 GMT+0900',
-                className: "bg-warning-lighten",
-            }],
+            }, ],
             a = this;
             
         a.$calendarObj = a.$calendar.fullCalendar({
